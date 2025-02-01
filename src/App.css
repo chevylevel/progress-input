@@ -1,0 +1,7 @@
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px 20px 4px 24px;
+    gap: 40px;
+}

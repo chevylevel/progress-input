@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  display: flex;
+  flex: 1 1 60px;
+  height: 24px;
+  border: solid var(--border-color) 1px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  min-width: 60px;
+}
+
+.label {
+    background: linear-gradient(to right, white var(--progress),#7A7A7A var(--progress));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

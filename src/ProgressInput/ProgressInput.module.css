@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  width: 425px;
+  overflow: hidden;
+}
+
+.editable,
+.hiddenSpan {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+  overflow: scroll;
+  white-space: preserve nowrap;
+  word-wrap: normal;
+  overflow-y: hidden;
+}
+
+.editable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.editable::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.editable::after {
+  content: var(--currency);
+  display: inline-block;
+  color: #168acd;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  margin-left: 8px;
+}
+
+.hiddenSpan {
+  visibility: hidden;
+  position: absolute;
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin: 8px 0;
+  width: 100%;
+}
